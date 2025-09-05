@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muhammad Shumail — Writing & Coding Portfolio</title>
+    <meta
+      name="description"
+      content="Writing and coding work samples by Muhammad Shumail: WSJ stories, interactives, and investigative mapping projects."
+    />
+    <link rel="canonical" href="./portfolio.html" />
+    <style>
+      :root {
+        --accent: #0b5fff;
+        --muted: #6b7280;
+        --bg: #f8fafc;
+        --paper: #ffffff;
+        --max-width: 1000px;
+        --pad: 28px;
+        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: var(--bg);
+        color: #0f172a;
+      }
+      .wrap {
+        max-width: var(--max-width);
+        margin: 32px auto;
+        padding: var(--pad);
+      }
+      .card {
+        background: var(--paper);
+        border-radius: 12px;
+        box-shadow: 0 6px 24px rgba(2, 6, 23, 0.06);
+        overflow: hidden;
+      }
+      header {
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #eef2ff;
+      }
+      .title h1 {
+        font-size: 22px;
+        margin: 0;
+      }
+      nav a {
+        text-decoration: none;
+        color: var(--accent);
+        font-weight: 600;
+        margin-left: 12px;
+      }
+      main {
+        padding: 20px 24px 28px;
+      }
+      .intro {
+        color: var(--muted);
+        margin-bottom: 16px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+      @media (max-width: 980px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 640px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .work {
+        border: 1px solid #eef2ff;
+        border-radius: 10px;
+        padding: 14px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+      }
+      .work h3 {
+        margin: 2px 0 6px;
+        font-size: 16px;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 12px;
+        margin-bottom: 8px;
+      }
+      .desc {
+        font-size: 14px;
+        color: #0b1220;
+        margin-bottom: 12px;
+      }
+      .thumb {
+        border: 1px solid #eef2ff;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+        margin: 6px 0 10px;
+      }
+      .thumb svg {
+        display: block;
+        width: 100%;
+        height: 180px;
+      }
+      .actions {
+        margin-top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 8px 10px;
+        border-radius: 8px;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .btn.primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .btn.ghost {
+        border: 1px solid #e6eefc;
+        color: var(--accent);
+        background: #fff;
+      }
+      footer {
+        padding: 14px 24px 22px;
+        border-top: 1px solid #eef2ff;
+        color: var(--muted);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <header>
+          <div class="title">
+            <h1>Writing & Coding</h1>
+            <div class="intro">Selected work: reporting, graphics, and interactive projects.</div>
+          </div>
+          <nav aria-label="Primary">
+            <a href="./index.html" aria-label="Go to resume">Resume</a>
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </header>
+        <main>
+          <section class="grid" aria-label="Work samples">
+            <!-- Story 1 -->
+            <article class="work" aria-labelledby="s1">
+              <h3 id="s1">Nvidia crossing $4 trillion market value</h3>
+              <div class="meta">Publication: Wall Street Journal</div>
+              <p class="desc">Coverage of Nvidia reaching a $4T market cap.</p>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="https://www.wsj.com/tech/ai/nvidia-nvda-4-trillion-market-cap-466c1c9c?gaa_at=eafs&gaa_n=ASWzDAjoeppAMXJgqB5CELILgCeEAsnc7Mkjg3Fkv0APtdbZDypg431wQQyp&gaa_ts=6882fbf4&gaa_sig=YFzAPYYyXUHggRDs8U8eiABZbBfAKlvE5we1p3XQ9eJbFGihYx8D6OIFpFe3jEsWOTVCEgV3iUeMQ7jy6t-Gxg%3D%3D"
+                  target="_blank"
+                  rel="noopener"
+                  >Read</a
+                >
+              </div>
+            </article>
+
+            <!-- Story 2 -->
+            <article class="work" aria-labelledby="s2">
+              <h3 id="s2">Interactive: Market reactions to Trump’s tweets</h3>
+              <div class="meta">D3.js interactive</div>
+              <p class="desc">
+                An exploratory chart visualizing stock moves around presidential tweets.
+              </p>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="https://techman96.github.io/trump/"
+                  target="_blank"
+                  rel="noopener"
+                  >Open Graph</a
+                >
+                <a
+                  class="btn ghost"
+                  href="https://github.com/techman96/trump"
+                  target="_blank"
+                  rel="noopener"
+                  >View Code</a
+                >
+              </div>
+            </article>
+
+            <!-- Story 3 -->
+            <article class="work" aria-labelledby="s3">
+              <h3 id="s3">The biggest companies across America are cutting their workforces</h3>
+              <div class="meta">Publication: Wall Street Journal</div>
+              <p class="desc">
+                Visual analysis of reductions in workforce across major U.S. companies.
+              </p>
+              <figure class="thumb">
+                <img
+                  src="./assets/Picture1.jpg"
+                  data-fallback="Missing image: Place 'Picture1.jpg' into the assets folder."
+                  alt="Scatter plot showing change in sales vs change in employees for S&P 500 companies, with labeled examples like Bank of America, Walmart, McKesson, HP"
+                  style="width: 100%; height: auto; display: block"
+                />
+                <figcaption class="meta">
+                  Sample image from the story (for portfolio display only).
+                </figcaption>
+              </figure>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="https://www.wsj.com/business/the-biggest-companies-across-america-are-cutting-their-workforces-a0e8739a?gaa_at=eafs&gaa_n=ASWzDAitxEFOwGzYXaAAZnOoVQJ240x4p8U9Z3Kr06j83G9k1gak4S2I2kfe&gaa_ts=6882fbf4&gaa_sig=AVbO12IEZi0C4NymGfkYgYNP_xHE65QHKu4cEBTc0Kz3ivTRZNGl79r5VHbzWYI6JMXO0GJbUeUfjkfdO-ImTg%3D%3D"
+                  target="_blank"
+                  rel="noopener"
+                  >Read</a
+                >
+              </div>
+            </article>
+
+            <!-- Story 4 -->
+            <article class="work" aria-labelledby="s4">
+              <h3 id="s4">How childhood neighborhoods shape credit scores</h3>
+              <div class="meta">Publication: Wall Street Journal</div>
+              <p class="desc">Data-driven story about the long-run impact of where you grow up.</p>
+              <figure class="thumb">
+                <img
+                  src="./assets/credit%20map.png"
+                  data-fallback="Missing image: Place 'credit map.png' into the assets folder."
+                  alt="Choropleth map of average credit scores across U.S. counties with blue to orange scale and hatched no-data legend"
+                  style="width: 100%; height: auto; display: block"
+                />
+                <figcaption class="meta">
+                  Sample image from the story (for portfolio display only).
+                </figcaption>
+              </figure>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="https://www.wsj.com/economy/credit-score-childhood-neighborhood-impact-dfaed7b8?gaa_at=eafs&gaa_n=ASWzDAj8uGe6YD7YCwo9SgSRPnRqlusZMBN-VSrZwLJXEK4UJ68SLEel0bQx&gaa_ts=6882fbf4&gaa_sig=mVO3ci6sXq1gqNCln5tzasggM-y-YcK40mATQA1tWtNOTrIWlwYGAY7rGHRzTXyE1x26bEilhTK0zyNTs2FvRQ%3D%3D"
+                  target="_blank"
+                  rel="noopener"
+                  >Read</a
+                >
+              </div>
+            </article>
+
+            <!-- Story 5 -->
+            <article class="work" aria-labelledby="s5">
+              <h3 id="s5">Capstone: Drone strikes in Pakistan</h3>
+              <div class="meta">MapLibre + D3.js</div>
+              <p class="desc">
+                Interactive reporting on drone strikes, methodology, and data presentation.
+              </p>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="https://techman96.github.io/reaper/"
+                  target="_blank"
+                  rel="noopener"
+                  >Open Project</a
+                >
+                <a
+                  class="btn ghost"
+                  href="https://github.com/techman96/reaper"
+                  target="_blank"
+                  rel="noopener"
+                  >View Code</a
+                >
+              </div>
+            </article>
+
+            <!-- Story 6 -->
+            <article class="work" aria-labelledby="s6">
+              <h3 id="s6">Map of unpaved roads in San Diego</h3>
+              <div class="meta">inewsource — Mapbox</div>
+              <p class="desc">
+                Searchable map application highlighting unpaved roads across San Diego County.
+              </p>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="https://inewsource.org/2024/06/20/map-san-diego-unpaved-roads/"
+                  target="_blank"
+                  rel="noopener"
+                  >Read</a
+                >
+                <a
+                  class="btn ghost"
+                  href="https://github.com/jselfinews/inews_maps"
+                  target="_blank"
+                  rel="noopener"
+                  >View Code</a
+                >
+              </div>
+            </article>
+
+            <!-- Story 7 -->
+            <article class="work" aria-labelledby="s7">
+              <h3 id="s7">Election story: 1968 vs 2024</h3>
+              <div class="meta">NY City News Service — Interactive feature</div>
+              <p class="desc">
+                I built the sliders for this story comparing protest movements across eras.
+              </p>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="https://election2024.nycitynewsservice.com/2024/11/05/vietnam-war-era-protesters-see-parallels-and-big-differences-between-1968-and-2024/"
+                  target="_blank"
+                  rel="noopener"
+                  >Read</a
+                >
+                <a
+                  class="btn ghost"
+                  href="https://github.com/techman96/1968"
+                  target="_blank"
+                  rel="noopener"
+                  >View Code</a
+                >
+              </div>
+            </article>
+          </section>
+        </main>
+        <footer>
+          <div>© <span id="year"></span> Muhammad Shumail • <a href="./index.html">Resume</a></div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear()
+      // Show a helpful note if images are missing
+      document.querySelectorAll('img[data-fallback]').forEach((img) => {
+        img.addEventListener(
+          'error',
+          () => {
+            const note = document.createElement('div')
+            note.className = 'meta'
+            note.textContent = img.getAttribute('data-fallback')
+            const fig = img.closest('figure') || img.parentElement
+            img.remove()
+            fig && fig.appendChild(note)
+          },
+          { once: true }
+        )
+      })
+    </script>
+  </body>
+</html>
